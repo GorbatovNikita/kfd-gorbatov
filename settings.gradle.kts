@@ -13,4 +13,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kfd-engineering-loop"
-include("app")
+
+include("core", "cli")
