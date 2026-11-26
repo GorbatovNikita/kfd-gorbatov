@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
+    application
 }
 
 kotlin {
@@ -17,4 +18,7 @@ tasks.test {
     testLogging {
         events("passed", "skipped", "failed")
     }
+}
+application {
+    mainClass.set("kfd.MainKt")
 }
